@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.header a.active {
+  text-decoration: none;
+  color: black;
+  background: beige;
+  border-radius: 10px;
+  text-align: center;
+  height: 30px;
+  font-size: 16px;
+  padding: .25rem;
+  border: 2px solid beige;
+}
+.header  {
+  background: burlywood;
+}
+.header ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding : 1rem 0;
+  margin: 0;
+}
+.header li{
+  margin-right: 1rem;
+}
+.header a:hover{
+  border-color: darkblue;
+}
+body {
+  background-color: beige;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px){
+  .container{
+      width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .container{
+      width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .container{
+      width: 900px;
+  }
+}
